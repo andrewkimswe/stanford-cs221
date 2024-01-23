@@ -67,10 +67,8 @@ def computeLongestPalindromeLength(text):
     if n == 0:
         return 0
 
-    # dp[i][j]는 text[i]부터 text[j]까지의 부분 문자열이 팰린드롬일 때의 길이를 저장합니다.
     dp = [[0] * n for _ in range(n)]
 
-    # 모든 단일 문자는 팰린드롬입니다.
     for i in range(n):
         dp[i][i] = 1
 
